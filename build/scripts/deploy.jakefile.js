@@ -6,7 +6,7 @@
 (function() {
 	"use strict";
 
-	var PRODUCTION_URL = "http://tdjs-ll8.herokuapp.com";
+	var PRODUCTION_URL = "http://nbauto.herokuapp.com";
 
 	var INTEGRATION_BRANCH = "integration";
 	var GIT_HEAD = "HEAD";
