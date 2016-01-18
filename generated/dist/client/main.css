@@ -64,7 +64,7 @@ textarea {
 
 @font-face {    
 font-family:        'Guardian Egyptian Web';
-src:                url('../type/GuardianEgyp-Black-Web.woff') format('woff');
+src:                url('/GuardianEgyp-Black-Web.woff') format('woff');
 font-weight:        800;
 font-style:         normal;
 font-stretch:       normal;
@@ -72,7 +72,7 @@ font-stretch:       normal;
 
 @font-face {
 font-family:        'Guardian Sans Web';
-src:                url('../type/GuardianSans-Bold-Web.woff') format('woff');
+src:                url('/GuardianSans-Bold-Web.woff') format('woff');
 font-weight:        700;
 font-style:         normal;
 font-stretch:       normal;
@@ -80,7 +80,7 @@ font-stretch:       normal;
 
 @font-face {
 font-family:        'Guardian Sans Web';
-src:                url('../type/GuardianSans-Medium-Web.woff') format('woff');
+src:                url('/GuardianSans-Medium-Web.woff') format('woff');
 font-weight:        500;
 font-style:         normal;
 font-stretch:       normal;
@@ -116,7 +116,7 @@ h1 {
     width: 30px;
     height: 30px;
     margin: 0 10px;
-    background: url("../img/heartIcon.svg") no-repeat center;
+    background: url("/heartIcon.svg") no-repeat center;
 
     animation-name: beat;
     animation-duration: 0.5s; 
