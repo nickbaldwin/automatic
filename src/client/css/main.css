@@ -364,14 +364,14 @@ padding-bottom: 1px;
 
 
     .blurb {
-        font-family: sans-serif;
+        font-family: Arial, sans-serif;
         font-size: 1rem;
         line-height: 1.1;
         color: #eee;
     }
 
     .fonts-loaded .blurb {
-        font-family: "Guardian Sans";
+        font-family: "Guardian Sans", Arial, sans-serif;
 }
 
 
@@ -563,40 +563,37 @@ img.fluid {
 
 
 .heading {
-    font-family:        serif;
+    font-family:        Georgia, serif;
     font-size:          31px;
 }
 
     .fonts-loaded .blurb {
-        font-family: "Guardian Egyp";
+        font-family: "Guardian Egyp", Georgia, serif;
 }
 
 
 .text {
-    font-family:        sans-serif;
+    font-family:        Arial, sans-serif;
     font-size:          18px;
 }
 
 
     .fonts-loaded .text {
-        font-family: "Guardian Sans";
+        font-family: "Guardian Sans", Arial, sans-serif;
 }
 
 .textLink {
-    font-family:        sans-serif;
+    font-family:        Arial, sans-serif;
     font-weight:        700;
     font-size:          18px;
 }
 
     .fonts-loaded .textLink {
-        font-family: "Guardian Sans";
+        font-family: "Guardian Sans", Arial, sans-serif;
 }
 
 
 
-    .fonts-loaded .blurb {
-        font-family: "Guardian Sans";
-}
 
 
 
