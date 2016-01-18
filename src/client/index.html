@@ -49,14 +49,7 @@
             10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=C&&(e==t&&f==t&&g==t||e==u&&f==u&&g==u||e==v&&f==v&&g==v)),b=!b;b&&(null!==d.parentNode&&d.parentNode.removeChild(d),clearTimeout(G),a(c))}function q(){if((new Date).getTime()-F>=E)null!==d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===a||void 0===a)e=m.a.offsetWidth,f=n.a.offsetWidth,g=p.a.offsetWidth,r();G=setTimeout(q,50)}}var m=new x(l),n=new x(l),p=new x(l),e=-1,f=-1,g=-1,t=-1,u=-1,v=-1,d=document.createElement("div"),
             G=0;d.dir="ltr";y(m,J(c,"sans-serif"));y(n,J(c,"serif"));y(p,J(c,"monospace"));d.appendChild(m.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);t=m.a.offsetWidth;u=n.a.offsetWidth;v=p.a.offsetWidth;q();A(m,function(a){e=a;r()});y(m,J(c,'"'+c.family+'",sans-serif'));A(n,function(a){f=a;r()});y(n,J(c,'"'+c.family+'",serif'));A(p,function(a){g=a;r()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;window.FontFaceObserver.prototype.check=B.prototype.a;"undefined"!==typeof module&&(module.exports=window.FontFaceObserver);}());
 
-            // oberve fonts loaded and then append class to html element, triggering css selectors
-            var observerSerif = new FontFaceObserver('Guardian Egyptian Web');
-            var observerSans = new FontFaceObserver('Guardian Sans Web');
-
-            Promise.all([observerSerif.check(), observerSans.check()]).then(function () {
-              window.document.documentElement.className += " fonts-loaded";
-            });
-    </script>
+              </script>
 
 </head>
 <body>
@@ -236,16 +229,16 @@
                                 <div class="whiteLine"></div>
                             </div>
                         
-                        <div class="footerTextArea">   
-                            <h1 class="intro">Hi. I'm Nick. Maybe I can help you?</h1>
-                            <p class="blurb">I help businesses with complex technology stacks identify the real problems they need to solve and make simple, smart web experiences for their customers.</p>
-                            <p class="blurb">I'm always keen to hear about new ideas &amp; technology and interesting problems. So if you'd like to chat, shoot me a <a href="mailto:nick@nickbaldwin.com">mail now.</a></p>
-                        </div><!-- /footer text -->
+                            <div class="footerTextArea">   
+                                <h1 class="intro">Hi. I'm Nick. Maybe I can help you?</h1>
+                                <p class="blurb">I help businesses with complex technology stacks identify the real problems they need to solve and make simple, smart web experiences for their customers.</p>
+                                <p class="blurb">I'm always keen to hear about new ideas &amp; technology and interesting problems. So if you'd like to chat, shoot me a <a href="mailto:nick@nickbaldwin.com">mail now.</a></p>
+                            </div><!-- /footer text -->
 
-                        <div class="pinkLine"></div>
-                    </div>
+                            <div class="pinkLine"></div>
+                        </div>
                 
-                </div><!-- /column -->
+                    </div><!-- /column -->
 
 
                     <!--    right column
@@ -263,25 +256,35 @@
 
             </div><!-- /slide -->
 
+        </div>
 
+    </div>
+    <script>
+          // oberve fonts loaded and then append class to html element, triggering css selectors
+        var observerSerif = new FontFaceObserver('Guardian Egyptian Web');
+        var observerSans = new FontFaceObserver('Guardian Sans Web');
 
+        Promise.all([observerSerif.check(null, 5000), observerSans.check()]).then(function () {
+            window.document.documentElement.className += " fonts-loaded";
+        });
 
+    </script>
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-71882114-1','auto');ga('send','pageview');
+    </script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-71882114-1','auto');ga('send','pageview');
-        </script>
-    </body>
+</body>
 </html>
