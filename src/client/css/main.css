@@ -88,16 +88,18 @@ font-stretch:       normal;
 
 
 h1 {
-    font: 32px/38px serif;
+    font: 32px/38px Georgia, serif;
+    font-weight: 700;
 }
 
 
  body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
 }
 
 .fonts-loaded body {
-    font-family: "Guardian Sans Web", sans-serif;
+    font-family: "Guardian Sans Web", Arial, sans-serif;
 }
 
 .fonts-loaded h1 {
