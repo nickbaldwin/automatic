@@ -1,5 +1,5 @@
 @font-face {    
-font-family:        'Guardian Egyptian Web';
+font-family:        'Guardian Egyptian Black';
 src:                url('/GuardianEgyp-Black-Web.woff') format('woff');
 font-weight:        800;
 font-style:         normal;
@@ -7,7 +7,7 @@ font-stretch:       normal;
 }
 
 @font-face {
-font-family:        'Guardian Sans Web';
+font-family:        'Guardian Sans Bold';
 src:                url('/GuardianSans-Bold-Web.woff') format('woff');
 font-weight:        700;
 font-style:         normal;
@@ -15,14 +15,12 @@ font-stretch:       normal;
 }
 
 @font-face {
-font-family:        'Guardian Sans Web';
+font-family:        'Guardian Sans Medium';
 src:                url('/GuardianSans-Medium-Web.woff') format('woff');
 font-weight:        500;
 font-style:         normal;
 font-stretch:       normal;
 }
-
-
 
 
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
@@ -94,21 +92,19 @@ textarea {
 
 h1 {
     font: 32px/38px Georgia, serif;
-    font-weight: 700;
 }
 
 
  body {
     font-family: Arial, sans-serif;
-    font-weight: 500;
 }
 
 .fonts-loaded body {
-    font-family: "Guardian Sans Web", Arial, sans-serif;
+    font-family: "Guardian Sans Medium", Arial, sans-serif;
 }
 
 .fonts-loaded h1 {
-    font-family: "Guardian Egyptian Web", serif;
+    font-family: "Guardian Egyptian Black", Georgia, serif;
 }
 
 
@@ -212,7 +208,7 @@ h1 {
 }
 
 .fonts-loaded .center {
-        font-family: "Guardian Egyp";
+        font-family: "Guardian Egyptian Black";
 }
 
 .page {
@@ -349,7 +345,7 @@ padding-bottom: 1px;
     }
 
     .intro {
-        font-family: serif;
+        font-family: Georgia, serif;
         font-size: 1.4rem;
         line-height: 1.2;
         color: #fff;
@@ -357,7 +353,7 @@ padding-bottom: 1px;
     }
 
     .fonts-loaded .intro {
-        font-family: "Guardian Egyp";
+        font-family: "Guardian Egyptian Black", Georgia, serif;
 }
 
     .introTextArea {
@@ -376,7 +372,7 @@ padding-bottom: 1px;
     }
 
     .fonts-loaded .blurb {
-        font-family: "Guardian Sans", Arial, sans-serif;
+        font-family: "Guardian Sans Medium", Arial, sans-serif;
 }
 
 
@@ -561,7 +557,7 @@ img.fluid {
 
 
 .fonts-loaded .heading {
-    font-family: "Guardian Egyp";
+    font-family: "Guardian Egyptian Black", Georgia, serif;
 }
 
 
@@ -573,7 +569,7 @@ img.fluid {
 }
 
     .fonts-loaded .blurb {
-        font-family: "Guardian Egyp", Georgia, serif;
+        font-family: "Guardian Egyptian Black", Georgia, serif;
 }
 
 
@@ -584,7 +580,7 @@ img.fluid {
 
 
     .fonts-loaded .text {
-        font-family: "Guardian Sans", Arial, sans-serif;
+        font-family: "Guardian Sans Medium", Arial, sans-serif;
 }
 
 .textLink {
@@ -594,11 +590,14 @@ img.fluid {
 }
 
     .fonts-loaded .textLink {
-        font-family: "Guardian Sans", Arial, sans-serif;
+        font-family: "Guardian Sans Bold", Arial, sans-serif;
 }
 
 
 
+    .fonts-loaded .blurb {
+        font-family: "Guardian Sans Medium", Arial, sans-serif;
+}
 
 
 
