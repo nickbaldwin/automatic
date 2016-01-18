@@ -1,0 +1,637 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color:          #222;
+    font-size:      1em;
+    line-height:    1.4;
+}
+
+::-moz-selection {
+    background:     #b3d4fc;
+    text-shadow:    none;
+}
+
+::selection {
+    background:     #b3d4fc;
+    text-shadow:    none;
+}
+
+hr {
+    display:        block;
+    height:         1px;
+    border:         0;
+    border-top:     1px solid #ccc;
+    margin:         1em 0;
+    padding:        0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border:         0;
+    margin:         0;
+    padding:        0;
+}
+
+textarea {
+    resize:         vertical;
+}
+
+.browserupgrade {
+    margin:         0.2em 0;
+    background:     #ccc;
+    color:          #000;
+    padding:        0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+
+
+
+
+
+
+@font-face {    
+font-family:        'Guardian Egyptian Web';
+src:                url('../type/GuardianEgyp-Black-Web.woff') format('woff');
+font-weight:        800;
+font-style:         normal;
+font-stretch:       normal;
+}
+
+@font-face {
+font-family:        'Guardian Sans Web';
+src:                url('../type/GuardianSans-Bold-Web.woff') format('woff');
+font-weight:        700;
+font-style:         normal;
+font-stretch:       normal;
+}
+
+@font-face {
+font-family:        'Guardian Sans Web';
+src:                url('../type/GuardianSans-Medium-Web.woff') format('woff');
+font-weight:        500;
+font-style:         normal;
+font-stretch:       normal;
+}
+
+
+h1 {
+    font: 32px/38px serif;
+}
+
+
+ body {
+    font-family: sans-serif;
+}
+
+.fonts-loaded body {
+    font-family: "Guardian Sans Web", sans-serif;
+}
+
+.fonts-loaded h1 {
+    font-family: "Guardian Egyptian Web", serif;
+}
+
+
+
+
+
+.heartIcon {
+
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    background: url("../img/heartIcon.svg") no-repeat center;
+
+    animation-name: beat;
+    animation-duration: 0.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+}
+
+
+
+.heartIconLarge {
+    display: none;
+    animation-name: beatLarge;
+    animation-duration: 0.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.heartIcon i {
+    display: none;
+}
+
+
+.beatingHeart {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+
+    animation-name: beat;
+    animation-duration: 0.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3); 
+  }
+}
+
+@keyframes beatLarge {
+  0% {
+    transform: scale(1); 
+  }
+  100% {
+    transform: translateX(12%) scale(1.3);
+  }
+}
+
+
+
+
+
+.pos {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    color: white;
+    z-index: 0;
+    z-index: 2;
+    margin-left:    20vw;
+    margin-right:    20vw;
+    font-size:  2vw;
+    line-height:    2.2vw;
+    font-family: serif;
+    letter-spacing: 0.5px;
+}
+
+.fonts-loaded .center {
+        font-family: "Guardian Egyp";
+}
+
+.page {
+
+}
+
+.nav {
+
+}
+
+.slideContainer {
+
+}
+
+.slide {
+    display: flex;
+
+    width: 100vw;
+
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+
+
+
+.darkBg {
+    background-color: #23191e;
+    width: 100%;
+}
+
+
+
+.row {
+    display:            flex;
+    justify-content:    center;
+    width:              100%;
+
+
+}
+
+.column {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.side, 
+.footer {
+    display: none;
+
+
+}
+
+.mid {
+    width: 100%;
+}
+
+
+
+
+
+.blurb a:hover {
+padding-bottom: 1px;
+
+    border-bottom-width: 2px;
+    border-bottom-color: #fff;
+    border-bottom-style: dotted;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* default mobile portrait display
+
+    @media   screen 
+    and (min-width: 800px) 
+    and (orientation: landscape) {
+*/
+
+    /* 
+        show svg header?
+        text
+        svg image
+        more text
+    */
+
+
+    .line {
+        position: absolute;
+        bottom: -1px;
+        height: 2px;
+        width: 100%;
+        background-color: #50465f;
+    }
+
+    .whiteLine {
+        position: absolute;
+        bottom: -1px;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+
+    .pinkLine {
+        height: 1vh;
+        width: 100%;
+        background-color: #b41478;
+    }
+
+
+    .hide-small {
+        display: none !important;
+        visibility: hidden;
+    }
+
+    .svgHeader {
+        margin-bottom: -4rem;
+    }
+
+    .footerTextArea {
+        background-color: #50465f;
+        padding: 0.5rem 1rem;
+        text-align: left;
+    }
+
+    .svgIntro {
+        display: none;
+    }
+
+    .intro {
+        font-family: serif;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        color: #fff;
+        text-align: center;
+    }
+
+    .fonts-loaded .intro {
+        font-family: "Guardian Egyp";
+}
+
+    .introTextArea {
+        padding: 0.7rem;
+        text-align: left;
+        text-align: center;
+    }
+
+
+
+    .blurb {
+        font-family: sans-serif;
+        font-size: 1rem;
+        line-height: 1.1;
+        color: #eee;
+    }
+
+    .fonts-loaded .blurb {
+        font-family: "Guardian Sans";
+}
+
+
+
+    .blurb a {
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+.text.white.link:hover {
+    border-bottom-width: 20px;
+    border-bottom-color: #fff;
+}
+    
+
+@media   screen 
+    and (max-width: 800px) 
+    and (orientation: portrait) {
+    /* 
+        show all svgs in middle column
+    */
+
+
+    .hide-small {
+        display: block;
+        visibility: visible;
+        }
+
+
+
+
+}
+
+
+
+
+@media   screen 
+    and (min-width: 800px) 
+ {
+    /* 
+        show all svgs in middle column
+    */
+
+    h1.intro {
+        display: none;
+    }
+
+    .svgIntro {
+        display: block;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .footerTextArea {
+        display: none;
+    }
+
+    .svgHeader {
+        margin-bottom: 0;
+    }
+
+    .hide-small {
+        display: block;
+        visibility: visible;
+        }
+
+
+.heartIconLarge {
+    display: inline-block;
+}
+.pinkLine {
+    display: none;
+}
+
+}
+
+@media   screen 
+    and (min-width: 800px) 
+    and (max-width: 1024px) 
+    and (min-aspect-ratio: 800/680)
+    and (max-aspect-ratio: 800/600) {
+    /* 
+        enter slide mode
+
+            and (min-aspect-ratio: 1025/690)
+            and (max-aspect-ratio: 1025/580) 
+
+    */
+
+    .slide {
+        height: 100vh;
+        overflow:hidden;
+    }
+
+}
+
+
+
+
+
+@media   screen 
+    and (min-width: 1025px) 
+    and (orientation: landscape) {
+    /* 
+        show left and right columns in wide (landscape screens)
+    */
+
+    .side {
+        display: block;
+        width: 14.44444444%;
+    }
+
+    .mid {
+        width: 71.11111112%;
+    }
+
+
+}
+
+
+@media   screen 
+    and (min-width: 1025px) 
+    and (min-aspect-ratio: 1025/660)
+    and (max-aspect-ratio: 1025/545) {
+    /* 
+        enter slide mode
+    */
+
+    .slide {
+        height: 100vh;
+        overflow:hidden;
+    }
+}
+
+
+
+
+.filler {
+    width:  100%;
+}
+
+img.fluid {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg {
+    
+}
+
+
+
+
+
+
+
+.pink {fill:#b41478;}
+
+ .dark {fill:#23191e;}
+.grey {fill:#32282d;}
+ .white {fill:#fff;}
+
+.lightPink {fill:#e553a2;}
+
+
+.dark {
+
+}
+
+
+ .blue {fill:#46d2e6; color: #46d2e6;}
+
+.purple {fill:#50465f;}
+
+
+.lightGrey {fill:#cccccd;}
+
+
+.fonts-loaded .heading {
+    font-family: "Guardian Egyp";
+}
+
+
+
+
+.heading {
+    font-family:        serif;
+    font-size:          31px;
+}
+
+    .fonts-loaded .blurb {
+        font-family: "Guardian Egyp";
+}
+
+
+.text {
+    font-family:        sans-serif;
+    font-size:          18px;
+}
+
+
+    .fonts-loaded .text {
+        font-family: "Guardian Sans";
+}
+
+.textLink {
+    font-family:        sans-serif;
+    font-weight:        700;
+    font-size:          18px;
+}
+
+    .fonts-loaded .textLink {
+        font-family: "Guardian Sans";
+}
+
+
+
+    .fonts-loaded .blurb {
+        font-family: "Guardian Sans";
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *, *:before, *:after {
+        background: transparent !important;
+        color: #000 !important;
+        background-color: #fff !important;
+    }
+
+    a, a:visited {
+        text-decoration: underline;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+}
