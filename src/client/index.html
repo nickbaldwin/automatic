@@ -54,7 +54,7 @@
             var observerSans = new FontFaceObserver('Guardian Sans Medium');
             var observerSansBold = new FontFaceObserver('Guardian Sans Bold');
 
-            Promise.all([observerSerif.check(null, 15000), observerSans.check(), observerSansBold.check()]).then(function () {
+            Promise.all([observerSerif.check(null, 25000), observerSans.check(null, 25000), observerSansBold.check(null, 25000)]).then(function () {
                 window.document.documentElement.className += " fonts-loaded";
             });
 
