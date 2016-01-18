@@ -264,7 +264,7 @@
         var observerSerif = new FontFaceObserver('Guardian Egyptian Web');
         var observerSans = new FontFaceObserver('Guardian Sans Web');
 
-        Promise.all([observerSerif.check(null, 5000), observerSans.check()]).then(function () {
+        Promise.all([observerSerif.check(null, 15000), observerSans.check()]).then(function () {
             window.document.documentElement.className += " fonts-loaded";
         });
 
